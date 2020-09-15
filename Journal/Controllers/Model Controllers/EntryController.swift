@@ -22,7 +22,7 @@ class EntryController {
     //Create Entries
     
     func addEntry(title:String,text:String) {
-        var newEntry = Entry(title: title, text: text)
+      let newEntry = Entry(title: title, text: text)
         entries.append(newEntry)
         //Save
     }

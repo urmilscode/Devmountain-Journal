@@ -14,6 +14,8 @@
 		B25D3923250FC2F300CB02BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25D3921250FC2F300CB02BE /* LaunchScreen.storyboard */; };
 		B2CE2E4225115D1C0073B3AC /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE2E4125115D1C0073B3AC /* Entry.swift */; };
 		B2CE2E4425115EF40073B3AC /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE2E4325115EF40073B3AC /* EntryController.swift */; };
+		B2CE2E46251167C60073B3AC /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE2E45251167C60073B3AC /* EntryListTableViewController.swift */; };
+		B2CE2E48251167EA0073B3AC /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE2E47251167EA0073B3AC /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B25D3924250FC2F300CB02BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CE2E4125115D1C0073B3AC /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		B2CE2E4325115EF40073B3AC /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		B2CE2E45251167C60073B3AC /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		B2CE2E47251167EA0073B3AC /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		B25D392E250FD8EC00CB02BE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B2CE2E45251167C60073B3AC /* EntryListTableViewController.swift */,
+				B2CE2E47251167EA0073B3AC /* EntryDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CE2E4225115D1C0073B3AC /* Entry.swift in Sources */,
+				B2CE2E46251167C60073B3AC /* EntryListTableViewController.swift in Sources */,
 				B25D3917250FC2E900CB02BE /* AppDelegate.swift in Sources */,
 				B2CE2E4425115EF40073B3AC /* EntryController.swift in Sources */,
+				B2CE2E48251167EA0073B3AC /* EntryDetailViewController.swift in Sources */,
 				B25D3919250FC2E900CB02BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
