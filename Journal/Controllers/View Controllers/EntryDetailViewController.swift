@@ -28,29 +28,46 @@ class EntryDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
+        
     }
     
     
     
     //Mark:- Actions
     
+   
+    @IBAction func clearText(_ sender: Any) {
+        titleTextField.text = ""
+        detailTextField.text = ""
+    }
     
-    @IBAction func clearText(_ sender: UIButton) {
+    
+    @IBAction func saveText(_ sender: Any) {
         
+        
+        guard let text = detailTextField.text, !text.isEmpty,
+            let title = titleTextField.text, !title.isEmpty else { return }
+        
+        if let entry = landingPad {
+            EntryController.shared.updateEntry(newTitle: title, newText: text, entry: entry)
+        } else {
+            EntryController.shared.addEntry(title: title, text: text)
+        }
+        navigationController?.popViewController(animated: true)
         
     }
     
     
     
-    @IBAction func saveEntries(_ sender: Any) {
-        
-        
-        
+    //Mark:- Helper Methods
+
+
+    func updateViews() {
+        guard let entry = landingPad else {return}
+        titleTextField.text = entry.title
+        detailTextField.text = entry.text
     }
-    
-    
-    
     
 }
 

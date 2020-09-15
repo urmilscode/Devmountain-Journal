@@ -76,7 +76,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="clear"/>
                                 <connections>
-                                    <action selector="clearText:" destination="wU4-Mz-9dk" eventType="touchUpInside" id="vf5-k0-PZG"/>
+                                    <action selector="clearText:" destination="wU4-Mz-9dk" eventType="touchUpInside" id="beS-3K-frr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z18-Ot-Urc">
@@ -98,7 +98,7 @@
                     <navigationItem key="navigationItem" id="Mbb-rV-oq6">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="IpS-5w-6Ao">
                             <connections>
-                                <action selector="saveEntries:" destination="wU4-Mz-9dk" id="6yX-vj-GLI"/>
+                                <action selector="saveText:" destination="wU4-Mz-9dk" id="gHG-kP-HE0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
